@@ -13,4 +13,14 @@ class Position extends Model
         'name',
         'report_to',
     ];
+
+    public function parentPosition()
+    {
+        return $this->belongsTo(Position::class, 'report_to');
+    }
+
+    public function childPositions()
+    {
+        return $this->hasMany(Position::class, 'report_to');
+    }
 }
