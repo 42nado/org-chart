@@ -7,18 +7,46 @@ use App\Models\Position;
 
 class PositionController extends Controller
 {
-    public function index(Request $request)
-    {
-        $positions = Position::query();
+public function index(Request $request)
+{
+    $positions = Position::query();
 
-        if ($request->has('search')) {
-            $positions->where('name', 'like', '%' . $request->search . '%');
-        }
-
-        $positions = $positions->orderBy('name')->get();
-
-        return response()->json($positions);
+    // Search functionality
+    if ($request->has('search')) {
+        $positions->where('name', 'like', '%' . $request->search . '%');
     }
+
+    // Sorting functionality
+    if ($request->has('sort')) {
+        $sort = $request->sort;
+
+        switch ($sort) {
+            case 'name-asc':
+                $positions->orderBy('name', 'asc');
+                break;
+            case 'name-desc':
+                $positions->orderBy('name', 'desc');
+                break;
+            case 'report_to':
+                $positions->leftJoin('positions as parent', 'positions.report_to', '=', 'parent.id')
+                          ->orderBy('parent.name');
+                break;
+            default:
+                $positions->orderBy('name');
+                break;
+        }
+    } else {
+        // Default sorting by name if no sort parameter is provided
+        $positions->orderBy('name');
+    }
+
+    // Include the parent position relationship
+    $positions = $positions->with('parentPosition')->get();
+
+    return response()->json($positions);
+}
+
+
 
     public function store(Request $request)
     {
@@ -26,6 +54,11 @@ class PositionController extends Controller
             'name' => 'required|unique:positions,name',
             'report_to' => 'nullable|exists:positions,id',
         ]);
+
+        //only allow one null report_to position
+        if ($validated['report_to'] === null && Position::whereNull('report_to')->exists()) {
+            return response()->json(['error' => 'Only one position can have a null report_to'], 400);
+        }
 
         $position = Position::create($validated);
 
