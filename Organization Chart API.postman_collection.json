@@ -1,0 +1,624 @@
+{
+	"info": {
+		"_postman_id": "708cfc91-91e3-40e7-b3ad-f314817b6817",
+		"name": "Organizational chart",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "29107113"
+	},
+	"item": [
+		{
+			"name": "http://organizational-chart.test/api/positions",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://organizational-chart.test/api/positions",
+					"protocol": "http",
+					"host": [
+						"organizational-chart",
+						"test"
+					],
+					"path": [
+						"api",
+						"positions"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://organizational-chart.test/api/positions",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"name\": \"CEO\",\r\n    \"report_to\": null\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://organizational-chart.test/api/positions",
+					"protocol": "http",
+					"host": [
+						"organizational-chart",
+						"test"
+					],
+					"path": [
+						"api",
+						"positions"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://organizational-chart.test/api/positions",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Manager\",\r\n    \"report_to\": 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://organizational-chart.test/api/positions",
+					"protocol": "http",
+					"host": [
+						"organizational-chart",
+						"test"
+					],
+					"path": [
+						"api",
+						"positions"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://organizational-chart.test/api/positions",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://organizational-chart.test/api/positions",
+					"protocol": "http",
+					"host": [
+						"organizational-chart",
+						"test"
+					],
+					"path": [
+						"api",
+						"positions"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://organizational-chart.test/api/positions",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "  {\r\n    \"name\": \"Development Lead\",\r\n    \"report_to\": 2\r\n  }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://organizational-chart.test/api/positions",
+					"protocol": "http",
+					"host": [
+						"organizational-chart",
+						"test"
+					],
+					"path": [
+						"api",
+						"positions"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://organizational-chart.test/api/positions",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Senior Developer 1\",\r\n    \"report_to\": 3\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://organizational-chart.test/api/positions/2",
+					"protocol": "http",
+					"host": [
+						"organizational-chart",
+						"test"
+					],
+					"path": [
+						"api",
+						"positions",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://organizational-chart.test/api/positions/2",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://organizational-chart.test/api/positions/2",
+					"protocol": "http",
+					"host": [
+						"organizational-chart",
+						"test"
+					],
+					"path": [
+						"api",
+						"positions",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://organizational-chart.test/api/positions",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Senior Developer 2\",\r\n    \"report_to\": 3\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://organizational-chart.test/api/positions",
+					"protocol": "http",
+					"host": [
+						"organizational-chart",
+						"test"
+					],
+					"path": [
+						"api",
+						"positions"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://organizational-chart.test/api/positions",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"QA Lead\",\r\n    \"report_to\": 3\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://organizational-chart.test/api/positions",
+					"protocol": "http",
+					"host": [
+						"organizational-chart",
+						"test"
+					],
+					"path": [
+						"api",
+						"positions"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://organizational-chart.test/api/positions/",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://organizational-chart.test/api/positions/",
+					"protocol": "http",
+					"host": [
+						"organizational-chart",
+						"test"
+					],
+					"path": [
+						"api",
+						"positions",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://organizational-chart.test/api/positions/6",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://organizational-chart.test/api/positions/6",
+					"protocol": "http",
+					"host": [
+						"organizational-chart",
+						"test"
+					],
+					"path": [
+						"api",
+						"positions",
+						"6"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://organizational-chart.test/api/positions/6 Copy",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://organizational-chart.test/api/positions/6",
+					"protocol": "http",
+					"host": [
+						"organizational-chart",
+						"test"
+					],
+					"path": [
+						"api",
+						"positions",
+						"6"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://organizational-chart.test/api/positions/6",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"QA Lead\",\r\n    \"report_to\": 2\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://organizational-chart.test/api/positions/6",
+					"protocol": "http",
+					"host": [
+						"organizational-chart",
+						"test"
+					],
+					"path": [
+						"api",
+						"positions",
+						"6"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://organizational-chart.test/api/positions/6",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://organizational-chart.test/api/positions/6",
+					"protocol": "http",
+					"host": [
+						"organizational-chart",
+						"test"
+					],
+					"path": [
+						"api",
+						"positions",
+						"6"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://organizational-chart.test/api/positions",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Senior QA Tester\",\r\n    \"report_to\": 6\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://organizational-chart.test/api/positions",
+					"protocol": "http",
+					"host": [
+						"organizational-chart",
+						"test"
+					],
+					"path": [
+						"api",
+						"positions"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://organizational-chart.test/api/positions",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Developer 3\",\r\n    \"report_to\": 5\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://organizational-chart.test/api/positions",
+					"protocol": "http",
+					"host": [
+						"organizational-chart",
+						"test"
+					],
+					"path": [
+						"api",
+						"positions"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://organizational-chart.test/api/positions",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"QA Tester 1\",\r\n    \"report_to\": 7\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://organizational-chart.test/api/positions",
+					"protocol": "http",
+					"host": [
+						"organizational-chart",
+						"test"
+					],
+					"path": [
+						"api",
+						"positions"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://organizational-chart.test/api/positions Copy 2",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"QA Tester 1\",\r\n    \"report_to\": 7\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://organizational-chart.test/api/positions",
+					"protocol": "http",
+					"host": [
+						"organizational-chart",
+						"test"
+					],
+					"path": [
+						"api",
+						"positions"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://organizational-chart.test/api/positions Copy",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"QA Tester 2\",\r\n    \"report_to\": 7\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://organizational-chart.test/api/positions",
+					"protocol": "http",
+					"host": [
+						"organizational-chart",
+						"test"
+					],
+					"path": [
+						"api",
+						"positions"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://organizational-chart.test/api/positions Copy 2",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Developer 2\",\r\n    \"report_to\": 4\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://organizational-chart.test/api/positions",
+					"protocol": "http",
+					"host": [
+						"organizational-chart",
+						"test"
+					],
+					"path": [
+						"api",
+						"positions"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://organizational-chart.test/api/positions Copy 3",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Developer 2\",\r\n    \"report_to\": 4\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://organizational-chart.test/api/positions",
+					"protocol": "http",
+					"host": [
+						"organizational-chart",
+						"test"
+					],
+					"path": [
+						"api",
+						"positions"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://organizational-chart.test/api/positions",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://organizational-chart.test/api/positions",
+					"protocol": "http",
+					"host": [
+						"organizational-chart",
+						"test"
+					],
+					"path": [
+						"api",
+						"positions"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://organizational-chart.test/api/positions",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"UI\",\r\n    \"report_to\": 4\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://organizational-chart.test/api/positions",
+					"protocol": "http",
+					"host": [
+						"organizational-chart",
+						"test"
+					],
+					"path": [
+						"api",
+						"positions"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
