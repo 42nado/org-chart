@@ -32,7 +32,7 @@ public function index(Request $request)
                           ->orderBy('parent.name');
                 break;
             default:
-                $positions->orderBy('name');
+                $positions->orderBy('id');
                 break;
         }
     } else {
