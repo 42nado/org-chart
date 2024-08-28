@@ -4,8 +4,9 @@
 
 ### Clone the repository
 
-   git clone https://github.com/42nado/organizational-chart.git
-   cd organizational chart
+    git clone https://github.com/42nado/organizational-chart.git
+   
+    cd organizational-chart
 
 ### Install dependencies
 
@@ -54,3 +55,7 @@ Delete Position: DELETE /api/positions/{id}
     Description: Deletes a specific position from the organizational chart.
     Parameters:
     {id} (integer, required): The ID of the position to delete.
+
+### Postman Collection
+
+Postman collection is included in the repository " Organization Chart API.postman_collection.json "
